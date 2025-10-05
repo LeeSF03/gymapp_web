@@ -2,6 +2,7 @@ import { betterAuth } from "better-auth"
 import { nextCookies } from "better-auth/next-js"
 import { drizzleAdapter } from "better-auth/adapters/drizzle"
 import { db } from "@/db/db"
+import { expo } from "@better-auth/expo"
 
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
@@ -11,5 +12,13 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
   },
-  plugins: [nextCookies()],
+  trustedOrigins: ["gymapp://"],
+
+  // NOTE:
+  // nextCookies should be last
+  // When you call a function that needs to set cookies,
+  // like signInEmail or signUpEmail in a server action,
+  // cookies won’t be set. This is because server actions
+  // need to use the cookies helper from Next.js to set cookies.
+  plugins: [expo(), nextCookies()],
 })
