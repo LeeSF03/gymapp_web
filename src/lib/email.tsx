@@ -1,6 +1,6 @@
 import { render } from "@react-email/components"
 import nodemailer from "nodemailer"
-import { Email } from "@/components/sign-in-email-otp"
+import { Email } from "@/components/emails/sign-in-email-otp"
 import SMTPTransport from "nodemailer/lib/smtp-transport"
 
 // TODO: add environment variables for user passward and email from
