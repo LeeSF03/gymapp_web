@@ -5,7 +5,6 @@
       "name": "gymapp_web",
       "dependencies": {
         "@better-auth/expo": "^1.3.26",
-        "@electric-sql/pglite": "^0.3.10",
         "better-auth": "^1.3.26",
         "dotenv": "^17.2.3",
         "drizzle-orm": "^0.44.6",
@@ -15,6 +14,8 @@
         "react-dom": "19.1.0",
       },
       "devDependencies": {
+        "@electric-sql/pglite": "^0.3.10",
+        "@electric-sql/pglite-socket": "^0.0.15",
         "@eslint/eslintrc": "^3",
         "@tailwindcss/postcss": "^4",
         "@types/node": "^20",
@@ -238,6 +239,8 @@
     "@drizzle-team/brocli": ["@drizzle-team/brocli@0.10.2", "", {}, "sha512-z33Il7l5dKjUgGULTqBsQBQwckHh5AbIuxhdsIxDDiZAzBOrZO6q9ogcWC65kU382AfynTfgNumVcNIjuIua6w=="],
 
     "@electric-sql/pglite": ["@electric-sql/pglite@0.3.10", "", {}, "sha512-1XtXXprd848aR4hvjNqBc3Gc86zNGmd60x+MgOUShbHYxt+J76N8A81DqTEl275T8xBD0vdTgqR/dJ4yJyz0NQ=="],
+
+    "@electric-sql/pglite-socket": ["@electric-sql/pglite-socket@0.0.15", "", { "peerDependencies": { "@electric-sql/pglite": "0.3.10" }, "bin": { "pglite-server": "dist/scripts/server.js" } }, "sha512-F4vuqDSoqm4ajm3D/6jiMW6ESzPo12V2S7GOMHa9Akb/QfMPfPN8DKhe19wN9a59Dr214SbqYddqk6jk8KB9hg=="],
 
     "@emnapi/core": ["@emnapi/core@1.5.0", "", { "dependencies": { "@emnapi/wasi-threads": "1.1.0", "tslib": "^2.4.0" } }, "sha512-sbP8GzB1WDzacS8fgNPpHlp6C9VZe+SJP3F90W9rLemaQj2PzIuTEl1qDOYQf58YIpyjViI24y9aPWCjEzY2cg=="],
 
