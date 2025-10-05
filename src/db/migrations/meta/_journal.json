@@ -5,15 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1759597386632,
-      "tag": "0000_spotty_turbo",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1759648066064,
-      "tag": "0001_goofy_surge",
+      "when": 1759672208550,
+      "tag": "0000_elite_golden_guardian",
       "breakpoints": true
     }
   ]
