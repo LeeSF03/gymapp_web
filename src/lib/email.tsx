@@ -11,7 +11,7 @@ const emailTransporter = nodemailer.createTransport({
   secure: true,
   auth: {
     user: process.env.GMAIL,
-    pass: process.env.GMAIL_APP_PASSWORD,
+    pass: process.env.GMAIL_APP_TOKEN,
   },
 })
 
